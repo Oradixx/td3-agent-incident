@@ -12,6 +12,15 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Référentiel MITRE ATT&CK (attack-stix-data), téléchargé une fois dans `data/` (ignoré par git) pour l'outil `check_mitre_id` :
+
+```bash
+mkdir -p data
+curl -fsSL -o data/enterprise-attack.json https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json
+```
+
+Test des outils seuls, sans l'agent : `python test_tools.py`.
+
 Ollama doit tourner avec un compte connecté (modèle cloud). Vérification :
 
 ```bash
