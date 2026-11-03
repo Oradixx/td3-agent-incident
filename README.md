@@ -20,11 +20,14 @@ ollama run nemotron-3-nano:30b-cloud
 
 ## Traces LangSmith
 
-À exporter dans le terminal qui lance l'agent (la clé ne doit jamais apparaître dans le code ni dans le dépôt) :
+Compte LangSmith en région EU. À exporter dans le terminal qui lance l'agent (la clé ne doit jamais apparaître dans le code ni dans le dépôt) :
 
 ```bash
 export LANGSMITH_TRACING=true
-export LANGSMITH_API_KEY=lsv2_...
+export LANGSMITH_ENDPOINT=https://eu.api.smith.langchain.com
+export LANGSMITH_API_KEY=
+export LANGSMITH_AGENT_ID=td3-vurpillot-spychala
+export LANGSMITH_AGENT_ENVIRONMENT=local
 export LANGSMITH_PROJECT=td3-vurpillot-spychala
 ```
 
