@@ -28,8 +28,9 @@ export LANGSMITH_ENDPOINT=https://eu.api.smith.langchain.com
 export LANGSMITH_API_KEY=
 export LANGSMITH_AGENT_ID=td3-vurpillot-spychala
 export LANGSMITH_AGENT_ENVIRONMENT=local
-export LANGSMITH_PROJECT=td3-vurpillot-spychala
 ```
+
+Ne pas définir `LANGSMITH_PROJECT` : avec `LANGSMITH_AGENT_ID`, langsmith lève une `EnvAddressError`, et c'est `LANGSMITH_AGENT_ID` qui range déjà les traces sous td3-vurpillot-spychala.
 
 ## Lancement
 
